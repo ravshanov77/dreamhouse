@@ -498,8 +498,6 @@ h3 {
   margin-left: 20px;
 }
 
-/* 777 */
-
 .contact-info {
   display: flex;
   padding: 0 20px;
@@ -575,6 +573,71 @@ h3 {
   color: rgb(234, 234, 173);
   border: none;
   background: rgba(15, 29, 0, 1);
+}
+
+.contact-phone-container {
+  display: flex;
+}
+
+.phone-code {
+  border-radius: 5px;
+  background-color: white;
+  margin-right: 10px;
+  border-width: 2px;
+}
+
+.contact-phone {
+  padding-right: -100px;
+  margin-right: 100px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  margin-top: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dropdown div {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dropdown div:hover {
+  background-color: #f1f1f1;
+}
+.flag {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 300px; /* Adjust as necessary */
+}
+#selectedCountry {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-right: none;
+  background-color: #f9f9f9;
+}
+#phoneInput {
+  border: 1px solid #ccc;
+  padding: 8px;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 777 */

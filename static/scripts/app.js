@@ -46,3 +46,31 @@ function checkVisibility2() {
 
 document.addEventListener("DOMContentLoaded", checkVisibility2);
 document.addEventListener("scroll", checkVisibility2);
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+function selectCountry(flag, code, flagUrl) {
+  document.getElementById("selectedCountry").innerHTML =
+    '<img class="flag" src="' + flagUrl + '" alt="' + flag + '">' + " " + code;
+  document.getElementById("dropdown").style.display = "none";
+  document.getElementById("phoneInput").value = "";
+}
+
+document.addEventListener("click", function (event) {
+  var dropdown = document.getElementById("dropdown");
+  var selectedCountry = document.getElementById("selectedCountry");
+  if (
+    !selectedCountry.contains(event.target) &&
+    !dropdown.contains(event.target) &&
+    event.target.id !== "phoneInput"
+  ) {
+    dropdown.style.display = "none";
+  }
+});
