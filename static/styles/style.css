@@ -603,26 +603,31 @@ h3 {
   width: 100%;
   box-sizing: border-box;
 }
+
 .dropdown div {
   padding: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
+
 .dropdown div:hover {
   background-color: #f1f1f1;
 }
+
 .flag {
   width: 20px;
   height: 15px;
   margin-right: 10px;
 }
+
 .input-container {
   display: flex;
   align-items: center;
   position: relative;
   width: 300px; /* Adjust as necessary */
 }
+
 #selectedCountry {
   display: flex;
   align-items: center;
@@ -632,6 +637,7 @@ h3 {
   border-right: none;
   background-color: #f9f9f9;
 }
+
 #phoneInput {
   border: 1px solid #ccc;
   padding: 8px;
@@ -639,8 +645,6 @@ h3 {
   width: 100%;
   box-sizing: border-box;
 }
-
-/* 777 */
 
 .footer {
   display: flex;
