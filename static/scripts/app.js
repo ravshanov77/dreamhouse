@@ -33,7 +33,7 @@ function init() {
 function checkVisibility2() {
   const elements = document.querySelectorAll(".content2");
   const windowHeight = window.innerHeight;
-  const offset = 200; // Пиксели, на которые элемент должен быть виден до появления
+  const offset = 200;
 
   elements.forEach((element) => {
     const positionFromTop = element.getBoundingClientRect().top;
@@ -54,15 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   openPopupButton.addEventListener("click", function () {
     popup.style.display = "flex";
+    popup.style.position = "fixed";
   });
 
   closeButton.addEventListener("click", function () {
-    popup.style.display = "none";
+    popup.style.display = "absolute";
+    popup.style.position = "fixed";
   });
 
   window.addEventListener("click", function (event) {
     if (event.target === popup) {
       popup.style.display = "none";
+      popup.style.position = "fixed";
     }
   });
 });
