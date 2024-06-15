@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <title>Dream House</title>
+    <title>Dream House (Farruh)</title>
 
     <script
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
@@ -202,9 +202,24 @@
             <button class="interior">Ichki ko'rinish</button>
           </div>
 
-          <button class="choose-button second-choose-button">
+          <button id="openPopup" class="choose-button second-choose-button">
             Zayavka qoldirish
           </button>
+
+          <div id="popupForm" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <form action="#" method="post">
+                <label for="name">F.I.F.</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="phone">Telefon *</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <button type="submit">Yuborish</button>
+              </form>
+            </div>
+          </div>
         </div>
 
         <div class="interior-container content">

@@ -46,3 +46,23 @@ function checkVisibility2() {
 
 document.addEventListener("DOMContentLoaded", checkVisibility2);
 document.addEventListener("scroll", checkVisibility2);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var popup = document.getElementById("popupForm");
+  var openPopupButton = document.getElementById("openPopup");
+  var closeButton = document.querySelector(".close");
+
+  openPopupButton.addEventListener("click", function () {
+    popup.style.display = "flex";
+  });
+
+  closeButton.addEventListener("click", function () {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
