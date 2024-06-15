@@ -27,6 +27,12 @@ h3 {
   font-size: 22px;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .content {
   opacity: 0;
   transform: translateY(70%);
@@ -589,6 +595,7 @@ h3 {
 .contact-phone {
   padding-right: -100px;
   margin-right: 100px;
+  width: 730px;
 }
 
 .dropdown {
