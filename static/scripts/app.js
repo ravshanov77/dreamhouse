@@ -103,5 +103,13 @@ document
 document
   .getElementById("closeFormButton")
   .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "none";
     document.querySelector(".background-content").style.filter = "none";
   });
+
+window.addEventListener("click", function (event) {
+  if (event.target == document.getElementById("contactForm")) {
+    document.getElementById("contactForm").style.display = "none";
+    document.querySelector(".background-content").style.filter = "none";
+  }
+});
