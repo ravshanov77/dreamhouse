@@ -74,3 +74,39 @@ document.addEventListener("click", function (event) {
     dropdown.style.display = "none";
   }
 });
+
+document
+  .getElementById("openFormButton")
+  .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "flex";
+  });
+
+document
+  .getElementById("closeFormButton")
+  .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "none";
+  });
+
+window.addEventListener("click", function (event) {
+  if (event.target == document.getElementById("contactForm")) {
+    document.getElementById("contactForm").style.display = "none";
+  }
+});
+
+document
+  .getElementById("openFormButton")
+  .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "flex";
+  });
+
+document
+  .getElementById("closeFormButton")
+  .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "none";
+  });
+
+window.addEventListener("click", function (event) {
+  if (event.target == document.getElementById("contactForm")) {
+    document.getElementById("contactForm").style.display = "none";
+  }
+});

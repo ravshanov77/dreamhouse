@@ -212,9 +212,28 @@
             <button class="interior">Ichki ko'rinish</button>
           </div>
 
-          <button class="choose-button second-choose-button content2 right2">
+          <button
+            id="openFormButton"
+            class="choose-button second-choose-button content2 right2"
+          >
             Zayavka qoldirish
           </button>
+
+          <div id="contactForm" class="form-popup">
+            <div class="form-container">
+              <span class="close-button" id="closeFormButton">&times;</span>
+              <h2>Kontaktlaringizni qoldiring</h2>
+              <form>
+                <label for="name">F.I.F.</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="phone">Telefon *</label>
+                <input type="text" id="phone" name="phone" required />
+
+                <button type="submit">Yuborish</button>
+              </form>
+            </div>
+          </div>
         </div>
 
         <div class="interior-container content">
