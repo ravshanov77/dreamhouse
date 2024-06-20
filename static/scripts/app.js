@@ -113,3 +113,17 @@ window.addEventListener("click", function (event) {
     document.querySelector(".background-content").style.filter = "none";
   }
 });
+
+document
+  .getElementById("exteriorButton")
+  .addEventListener("click", function () {
+    this.classList.add("active");
+    document.getElementById("interiorButton").classList.remove("active");
+  });
+
+document
+  .getElementById("interiorButton")
+  .addEventListener("click", function () {
+    this.classList.add("active");
+    document.getElementById("exteriorButton").classList.remove("active");
+  });
