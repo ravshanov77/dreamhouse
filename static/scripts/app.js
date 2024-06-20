@@ -92,3 +92,24 @@ window.addEventListener("click", function (event) {
     document.getElementById("contactForm").style.display = "none";
   }
 });
+
+document
+  .getElementById("openFormButton")
+  .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "flex";
+    document.querySelector(".background-content").style.filter = "blur(5px)";
+  });
+
+document
+  .getElementById("closeFormButton")
+  .addEventListener("click", function () {
+    document.getElementById("contactForm").style.display = "none";
+    document.querySelector(".background-content").style.filter = "none";
+  });
+
+window.addEventListener("click", function (event) {
+  if (event.target == document.getElementById("contactForm")) {
+    document.getElementById("contactForm").style.display = "none";
+    document.querySelector(".background-content").style.filter = "none";
+  }
+});

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form Popup</title>
+    <style>
+      body {
+        margin: 1000px;
+      }
+
+      .background-content {
+        transition: filter 0.3s ease;
+      }
+
+      .image-container {
+        position: relative;
+        text-align: center;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
+
+      .image-container button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 1; /* Ensure the button is above the image */
+      }
+
+      .form-popup {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 2; /* Ensure the popup is above other elements */
+      }
+
+      .form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-content">
+      <div class="image-container">
+        <img src="your-image-path.png" alt="Building Image" />
+        <button id="openFormButton">Zayavka qoldirish</button>
+      </div>
+    </div>
+
+    <div id="contactForm" class="form-popup">
+      <div class="form-container">
+        <span class="close-button" id="closeFormButton">&times;</span>
+        <h2>Kontaktlaringizni qoldiring</h2>
+        <form>
+          <label for="name">F.I.F.</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Telefon *</label>
+          <input type="text" id="phone" name="phone" required />
+
+          <button type="submit">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("openFormButton")
+        .addEventListener("click", function () {
+          document.getElementById("contactForm").style.display = "flex";
+          document.querySelector(".background-content").style.filter =
+            "blur(5px)";
+        });
+
+      document
+        .getElementById("closeFormButton")
+        .addEventListener("click", function () {
+          document.getElementById("contactForm").style.display = "none";
+          document.querySelector(".background-content").style.filter = "none";
+        });
+
+      window.addEventListener("click", function (event) {
+        if (event.target == document.getElementById("contactForm")) {
+          document.getElementById("contactForm").style.display = "none";
+          document.querySelector(".background-content").style.filter = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
