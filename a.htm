@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <style>
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button id="exteriorButton" class="active">Tashqi ko'rinish</button>
+      <button id="interiorButton">Ichki ko'rinish</button>
+    </div>
+    <img
+      id="displayImage"
+      src="static/images/exterior1.png"
+      alt="Display Image"
+    />
+
+    <script>
+      document
+        .getElementById("exteriorButton")
+        .addEventListener("click", function () {
+          this.classList.add("active");
+          document.getElementById("interiorButton").classList.remove("active");
+          document.getElementById("displayImage").src =
+            "static/images/exterior1.png";
+        });
+
+      document
+        .getElementById("interiorButton")
+        .addEventListener("click", function () {
+          this.classList.add("active");
+          document.getElementById("exteriorButton").classList.remove("active");
+          document.getElementById("displayImage").src =
+            "static/images/interior.png";
+        });
+    </script>
+  </body>
+</html>
