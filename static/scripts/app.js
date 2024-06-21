@@ -141,7 +141,8 @@ document
   .addEventListener("click", function () {
     this.classList.add("active");
     document.getElementById("exteriorButton").classList.remove("active");
-    document.getElementById("displayImage").src = "static/images/interior1.png";
+    document.getElementById("displayImage").src =
+      "../static/images/interior1.png";
   });
 
 let slideIndex = 0;
