@@ -336,7 +336,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .second-choose-button {
   color: #0f1d00;
-  width: 300px;
+  width: 320px;
 
   border-color: #0f1d00;
   transition: background-color 0.4s, color 0.4s, box-shadow 0.4s;
