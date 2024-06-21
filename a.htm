@@ -1,43 +1,128 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider with Two-Finger Swipe Support</title>
     <style>
-      img {
+      .slider-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .slides img {
         width: 100%;
-        height: auto;
-        margin-top: 20px;
+        border: 2px solid black;
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="button-container">
-      <button id="exteriorButton" class="active">Tashqi ko'rinish</button>
-      <button id="interiorButton">Ichki ko'rinish</button>
+    <div class="slider-container">
+      <div class="slides">
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+        <img src="static/images/exterior1.png" alt="Image 1" />
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
-    <img
-      id="displayImage"
-      src="static/images/exterior1.png"
-      alt="Display Image"
-    />
 
     <script>
-      document
-        .getElementById("exteriorButton")
-        .addEventListener("click", function () {
-          this.classList.add("active");
-          document.getElementById("interiorButton").classList.remove("active");
-          document.getElementById("displayImage").src =
-            "static/images/exterior1.png";
-        });
+      let currentIndex = 0;
+      let initialTouchPos1 = null;
+      let initialTouchPos2 = null;
 
-      document
-        .getElementById("interiorButton")
-        .addEventListener("click", function () {
-          this.classList.add("active");
-          document.getElementById("exteriorButton").classList.remove("active");
-          document.getElementById("displayImage").src =
-            "static/images/interior.png";
-        });
+      function showSlide(index) {
+        const slides = document.querySelector(".slides");
+        const totalSlides = document.querySelectorAll(".slides img").length;
+
+        if (index >= totalSlides) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = totalSlides - 1;
+        } else {
+          currentIndex = index;
+        }
+
+        const offset = -currentIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+      }
+
+      function changeSlide(step) {
+        showSlide(currentIndex + step);
+      }
+
+      function handleTouchStart(event) {
+        if (event.touches.length === 2) {
+          initialTouchPos1 = event.touches[0].clientX;
+          initialTouchPos2 = event.touches[1].clientX;
+        }
+      }
+
+      function handleTouchMove(event) {
+        if (event.touches.length === 2) {
+          const currentTouchPos1 = event.touches[0].clientX;
+          const currentTouchPos2 = event.touches[1].clientX;
+
+          const moveThreshold = 50;
+          if (initialTouchPos1 && initialTouchPos2) {
+            const moveDistance1 = initialTouchPos1 - currentTouchPos1;
+            const moveDistance2 = initialTouchPos2 - currentTouchPos2;
+
+            if (
+              moveDistance1 > moveThreshold &&
+              moveDistance2 > moveThreshold
+            ) {
+              changeSlide(1);
+              initialTouchPos1 = null;
+              initialTouchPos2 = null;
+            } else if (
+              moveDistance1 < -moveThreshold &&
+              moveDistance2 < -moveThreshold
+            ) {
+              changeSlide(-1);
+              initialTouchPos1 = null;
+              initialTouchPos2 = null;
+            }
+          }
+        }
+      }
+
+      const slidesElement = document.querySelector(".slides");
+      slidesElement.addEventListener("touchstart", handleTouchStart, false);
+      slidesElement.addEventListener("touchmove", handleTouchMove, false);
+
+      showSlide(currentIndex);
     </script>
   </body>
 </html>

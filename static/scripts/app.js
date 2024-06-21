@@ -127,3 +127,19 @@ document
     this.classList.add("active");
     document.getElementById("exteriorButton").classList.remove("active");
   });
+
+document
+  .getElementById("exteriorButton")
+  .addEventListener("click", function () {
+    this.classList.add("active");
+    document.getElementById("interiorButton").classList.remove("active");
+    document.getElementById("displayImage").src = "static/images/exterior1.png";
+  });
+
+document
+  .getElementById("interiorButton")
+  .addEventListener("click", function () {
+    this.classList.add("active");
+    document.getElementById("exteriorButton").classList.remove("active");
+    document.getElementById("displayImage").src = "static/images/interior1.png";
+  });
