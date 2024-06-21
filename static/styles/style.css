@@ -35,8 +35,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .content {
   opacity: 0;
-  transform: translateY(70%);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(60%);
+  transition: opacity 1s ease-out, transform 0.7s ease-out;
 }
 
 .content.visible {
@@ -46,7 +46,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .content2 {
   opacity: 0;
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 1s ease-out, transform 0.7s ease-out;
   margin-bottom: 20px;
 }
 
