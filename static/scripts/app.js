@@ -23,9 +23,7 @@ function init() {
     zoom: 17,
   });
 
-  var myPlacemark = new ymaps.Placemark([39.660082, 66.930446], {
-    balloonContent: "Локация",
-  });
+  var myPlacemark = new ymaps.Placemark([39.660082, 66.930446]);
 
   myMap.geoObjects.add(myPlacemark);
 }
