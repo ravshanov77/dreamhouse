@@ -143,3 +143,31 @@ document
     document.getElementById("exteriorButton").classList.remove("active");
     document.getElementById("displayImage").src = "static/images/interior1.png";
   });
+
+let slideIndex = 0;
+
+function moveSlides(n) {
+  const slides = document.querySelector(".slides");
+  const totalSlides = document.querySelectorAll(".slide").length;
+  slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+let startX;
+
+document.querySelector(".carousel").addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+document.querySelector(".carousel").addEventListener("touchmove", (e) => {
+  if (!startX) return;
+
+  const xDiff = startX - e.touches[0].clientX;
+
+  if (xDiff > 0) {
+    moveSlides(1);
+  } else {
+    moveSlides(-1);
+  }
+  startX = null;
+});
