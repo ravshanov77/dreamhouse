@@ -79,6 +79,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .logo {
   height: 80px;
+  justify-content: center;
+  margin-left: 50%;
+  cursor: pointer;
 }
 
 .middle-section {
@@ -94,13 +97,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .right-section,
 .left-section {
-  width: 30%;
+  width: 25%;
   justify-content: center;
   align-items: center;
-}
-
-.left-section {
-  justify-content: space-between;
 }
 
 .phone-img {
