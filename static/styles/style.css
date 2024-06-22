@@ -11,10 +11,6 @@ html {
   height: 60%;
 }
 
-p {
-  width: 100%;
-}
-
 section {
   scroll-margin-top: 90px;
 }
@@ -193,7 +189,6 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
   color: rgb(234, 234, 173);
   font-size: 200%;
-  /* font-family: "PT Sans", sans-serif, bold; */
   font-weight: 900;
   text-align: center;
   padding: 10%;
@@ -203,6 +198,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .description {
   margin-top: -4%;
+  width: 100%;
   font-size: 90%;
   font-weight: 500;
 }
