@@ -174,7 +174,7 @@ input[type="number"]::-webkit-inner-spin-button {
   filter: brightness(70%);
   margin-top: 4.5%;
   height: 100%;
-  clip-path: inset(0 0 104px 0);
+  clip-path: inset(0 0 13% 0);
 }
 
 .overlay {
@@ -188,17 +188,19 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   color: rgb(234, 234, 173);
-  font-size: 36px;
-  font-family: "PT Sans", sans-serif, bold;
+  font-size: 200%;
+  /* font-family: "PT Sans", sans-serif, bold; */
+  font-weight: 900;
   text-align: center;
-  padding: 20px;
+  padding: 10%;
   box-sizing: border-box;
   z-index: 1;
 }
 
 .description {
-  margin-top: -40px;
-  font-size: 34px;
+  margin-top: -4%;
+  font-size: 90%;
+  font-weight: 500;
 }
 
 .choose-button {
@@ -237,7 +239,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .info-container {
-  margin-top: -270px;
+  margin-top: -20%;
   height: 24%;
 }
 
