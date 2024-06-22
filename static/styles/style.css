@@ -691,7 +691,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   position: relative;
-  width: 300px; /* Adjust as necessary */
+  width: 50%; /* Adjust as necessary */
 }
 
 #selectedCountry {
