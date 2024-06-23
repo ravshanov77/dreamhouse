@@ -8,7 +8,8 @@ html {
 }
 
 #map {
-  height: 60%;
+  height: 600px;
+  width: 100%;
 }
 
 section {
@@ -241,6 +242,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .info-container {
   margin-top: -20%;
   height: 24%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .location {
@@ -253,6 +256,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .location-info {
   display: flex;
   height: 140%;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 20px;
   margin: 3% 0 0 0;
@@ -355,10 +359,16 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .classes {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 110%;
   margin: -6% 0 5% 0;
+}
+
+.class1 {
+  flex-grow: 10;
+  flex-basis: 300px;
 }
 
 .advantage {
