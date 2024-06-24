@@ -829,7 +829,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .info-container {
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    margin-top: 0px;
   }
 
   .location-info {
