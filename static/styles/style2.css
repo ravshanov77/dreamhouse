@@ -76,17 +76,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .heading {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .logo {
   height: 80px;
-  justify-content: center;
-  margin-left: 50%;
   cursor: pointer;
 }
 
 .middle-section {
-  width: 40%;
+  display: none;
   justify-content: space-between;
   font-size: 14px;
 }
@@ -98,8 +97,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .right-section,
 .left-section {
-  width: 25%;
-  justify-content: center;
+  display: flex;
   align-items: center;
 }
 
@@ -121,13 +119,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .flag {
-  width: 2%;
-  height: 2%;
-  margin-right: 5%;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
 }
 
 .language-code {
-  margin-right: 5%;
+  margin-right: 5px;
 }
 
 .arrow {
@@ -207,7 +205,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .choose-button {
   margin-top: 1em;
-  padding: 1.5rem 1.8rem;
+  padding: 1rem 2rem;
   font-size: 1.5rem;
   background: transparent;
   border-style: solid;
@@ -230,11 +228,6 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-bottom: -17%;
   color: #0f1d00;
 }
-
-/* .heading,
-.main-content {
-  z-index: 2;
-} */
 
 .location-logo {
   height: 32px;
@@ -381,7 +374,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hr-line {
-  /* border: 4px; */
   height: 3px;
   background-color: #0f1d00;
 }
@@ -398,10 +390,6 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   padding: 0px 16px;
   height: 46px;
-  /* top: 1841px; */
-  /* left: 138px; */
-  /* gap: 0px; */
-  opacity: 0px;
   font-size: 2rem;
   font-weight: 600;
   color: rgb(234, 234, 173);
@@ -412,10 +400,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .interior {
   padding: 0px 20px;
   height: 46px;
-  /* top: 1841px;
-  left: 138px; */
-  /* gap: 0px; */
-  opacity: 0px;
   font-size: 2rem;
   font-weight: 600;
   margin-left: -10px;
@@ -804,4 +788,211 @@ input[type="number"]::-webkit-inner-spin-button {
 .visual-container {
   height: 1000px;
   width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle-section a {
+    margin: 5px 0;
+  }
+
+  .left-section,
+  .right-section {
+    width: auto;
+  }
+
+  .phone,
+  .language-selector {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+
+  .background-img {
+    height: auto;
+    clip-path: none;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .location-info {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .button-container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choose-button {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 5%;
+  }
+
+  .second-choose-button {
+    width: 100%;
+  }
+
+  .project-container,
+  .fact-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .classes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .class1 {
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+
+  .facilities {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .facility {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .contact-img-container {
+    width: 100%;
+  }
+
+  .contact-img {
+    width: 100%;
+  }
+
+  .put-contact {
+    width: 100%;
+  }
+
+  .put-contact-name,
+  .put-contact-send {
+    width: 100%;
+  }
+
+  .area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-img {
+    width: 100%;
+  }
+
+  .area-description {
+    margin-left: 0;
+  }
+
+  .lifestyle-benefit,
+  .lifestyle-benefit-rev {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lifestyle-description,
+  .benefit-img {
+    margin: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 5px;
+  }
+
+  .choose-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .info-heading {
+    font-size: 0.9rem;
+  }
+
+  .fact {
+    font-size: 0.9rem;
+  }
+
+  .facility-name,
+  .facility-distance {
+    font-size: 0.9rem;
+  }
+
+  .put-contact-heading {
+    font-size: 24px;
+  }
+
+  .put-contact-text {
+    font-size: 16px;
+  }
+
+  .put-contact-name,
+  .put-contact-send {
+    font-size: 16px;
+  }
+
+  .choose-button,
+  .second-choose-button {
+    font-size: 1.2rem;
+  }
+
+  .lifestyle-title {
+    font-size: 1.5rem;
+  }
+
+  .lifestyle-description .description-info,
+  .benefit-fact .description-fact {
+    font-size: 0.9rem;
+  }
+
+  .location-heading,
+  .area-heading {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
 }
