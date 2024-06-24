@@ -2,6 +2,7 @@ body,
 html {
   font-family: montserrat;
   margin: 0;
+  font-size: 100%;
   overflow-x: hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -189,7 +190,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   color: rgb(234, 234, 173);
-  font-size: 200%;
+  font-size: 2em;
   font-weight: 900;
   text-align: center;
   padding: 10%;
@@ -200,14 +201,14 @@ input[type="number"]::-webkit-inner-spin-button {
 .description {
   margin-top: -4%;
   width: 100%;
-  font-size: 90%;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .choose-button {
   margin-top: 12px;
   padding: 22px 54px;
-  font-size: 100%;
+  font-size: 1.5rem;
   background: transparent;
   border-style: solid;
   border-width: 1px;
@@ -257,8 +258,9 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   height: 140%;
   flex-wrap: wrap;
+  flex-basis: 200;
   width: 100%;
-  font-size: 20px;
+  font-size: 1rem;
   margin: 3% 0 0 0;
   flex-direction: row;
   justify-content: space-between;
@@ -275,6 +277,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .info-heading {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 4%;
+  font-size: 1rem;
 }
 
 .carousel {
@@ -373,7 +376,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .advantage {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 110%;
+  font-size: 1.1rem;
   margin: -2px 0 -2px 0;
 }
 
@@ -395,11 +398,11 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   padding: 0px 16px;
   height: 46px;
-  top: 1841px;
-  left: 138px;
-  gap: 0px;
+  /* top: 1841px; */
+  /* left: 138px; */
+  /* gap: 0px; */
   opacity: 0px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: rgb(234, 234, 173);
   background-color: #0f1d00;
@@ -409,11 +412,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .interior {
   padding: 0px 20px;
   height: 46px;
-  top: 1841px;
-  left: 138px;
-  gap: 0px;
+  /* top: 1841px;
+  left: 138px; */
+  /* gap: 0px; */
   opacity: 0px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   margin-left: -10px;
   border-color: #0f1d00;
@@ -476,7 +479,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .description-info {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .benefit-fact {
