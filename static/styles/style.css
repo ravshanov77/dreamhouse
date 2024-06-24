@@ -740,7 +740,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-container3 button {
   padding: 10px 20px;
-  font-size: 19px;
+  font-size: 1rem;
   border: 3px solid #0f1d00;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -789,14 +789,14 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  font-size: 16px;
-  height: 121px;
+  font-size: 1em;
+  height: 8em;
   background-color: rgba(248, 248, 248, 1);
   margin-top: 70px;
   color: rgba(15, 29, 0, 1);
 }
 
 .visual-container {
-  height: 100%;
+  height: 1000px;
   width: 100%;
 }
