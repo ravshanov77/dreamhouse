@@ -826,10 +826,6 @@ input[type="number"]::-webkit-inner-spin-button {
     clip-path: none;
   }
 
-  .overlay p {
-    font-size: 1em;
-  }
-
   .info-container {
     flex-direction: column;
     align-items: center;
