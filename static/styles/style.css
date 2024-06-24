@@ -207,7 +207,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .choose-button {
   margin-top: 12px;
   padding: 22px 54px;
-  font-size: 24px;
+  font-size: 100%;
   background: transparent;
   border-style: solid;
   border-width: 1px;
@@ -230,10 +230,10 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #0f1d00;
 }
 
-.heading,
+/* .heading,
 .main-content {
   z-index: 2;
-}
+} */
 
 .location-logo {
   height: 32px;
@@ -378,9 +378,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hr-line {
-  border: 4px;
-  height: 4px;
-  background: #0f1d00;
+  /* border: 4px; */
+  height: 3px;
+  background-color: #0f1d00;
 }
 
 .button-container2 {
@@ -388,7 +388,7 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0 0 0;
+  margin: 1% 0 0 0;
 }
 
 .exterior {
@@ -797,6 +797,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .visual-container {
-  height: 1000px;
+  height: 100%;
   width: 100%;
 }
