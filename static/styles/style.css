@@ -190,7 +190,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   color: rgb(234, 234, 173);
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 900;
   text-align: center;
   padding: 10%;
@@ -207,7 +207,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .choose-button {
   margin-top: 1em;
-  padding: 1.5rem 1.8rem;
+  padding: 1.5rem 3rem;
   font-size: 1.5rem;
   background: transparent;
   border-style: solid;
@@ -237,7 +237,7 @@ input[type="number"]::-webkit-inner-spin-button {
 } */
 
 .location-logo {
-  height: 32px;
+  height: 2rem;
 }
 
 .info-container {
