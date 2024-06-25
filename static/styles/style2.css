@@ -1,11 +1,18 @@
 body,
 html {
-  font-family: montserrat;
+  font-family: "Proxima Nova Regular";
   margin: 0;
   font-size: 100%;
   overflow-x: hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Proxima Nova Regular";
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 #map {
