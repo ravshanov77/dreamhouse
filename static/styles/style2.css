@@ -1,18 +1,11 @@
 body,
 html {
-  font-family: "Proxima Nova Regular";
+  font-family: montserrat;
   margin: 0;
   font-size: 100%;
   overflow-x: hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
-}
-
-* {
-  font-family: "Proxima Nova Regular";
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 
 img {
@@ -839,17 +832,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .right-section {
     display: flex;
-    margin-top: -130px;
+    margin-top: -110px;
+    justify-content: end;
     font-size: 0.7rem;
   }
 
-  .hide {
+  .hide1 {
     display: none;
   }
-
-  /* .middle-section {
-    display: none;
-  } */
 
   .background-img {
     margin-top: 80px;
