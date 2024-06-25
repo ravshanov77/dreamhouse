@@ -128,6 +128,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 5px;
 }
 
+.hamburger {
+  height: 20px;
+}
+
 .arrow {
   transition: transform 0.3s ease;
 }
@@ -822,8 +826,13 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .right-section {
+    display: flex;
     margin-top: -130px;
     font-size: 0.7rem;
+  }
+
+  .hide {
+    display: none;
   }
 
   /* .middle-section {
@@ -838,6 +847,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .overlay {
     margin-top: -200px;
+    font-size: 0.8rem;
+  }
+
+  .description {
     font-size: 0.8rem;
   }
 
@@ -860,7 +873,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .choose-button {
-    width: 70%;
+    width: 100%;
   }
 
   .main-content {
