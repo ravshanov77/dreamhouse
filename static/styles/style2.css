@@ -85,6 +85,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .middle-section {
+  width: 50%;
   justify-content: space-between;
   font-size: 14px;
 }
@@ -820,21 +821,37 @@ input[type="number"]::-webkit-inner-spin-button {
     height: auto;
   }
 
+  .right-section {
+    margin-top: -130px;
+    font-size: 0.7rem;
+  }
+
+  /* .middle-section {
+    display: none;
+  } */
+
   .background-img {
-    height: auto;
+    margin-top: 80px;
+    height: 400px;
     clip-path: none;
+  }
+
+  .overlay {
+    margin-top: -200px;
+    font-size: 0.8rem;
   }
 
   .info-container {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-top: 0px;
   }
 
   .location-info {
     flex-direction: column;
-    align-items: center;
-    font-size: 0.9rem;
+    align-items: start;
+    row-gap: 0;
+    font-size: 0.8rem;
   }
 
   .button-container2 {
@@ -843,7 +860,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .choose-button {
-    width: 100%;
+    width: 70%;
   }
 
   .main-content {
