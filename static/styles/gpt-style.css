@@ -927,6 +927,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .classes {
     /* flex-direction: column; */
+    flex-wrap: wrap;
+    flex-basis: 100px;
     align-items: center;
   }
 
