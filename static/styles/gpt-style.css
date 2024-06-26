@@ -799,6 +799,18 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
 }
 
+/* main style ends */
+
+/*
+s
+s
+s
+s
+s
+s
+s
+s 1200px */
+
 @media screen and (max-width: 1200px) {
   .heading {
     flex-direction: column;
@@ -825,6 +837,16 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+/*
+s
+s
+s
+s
+s
+s
+s
+s 768px */
+
 @media screen and (max-width: 768px) {
   .header {
     height: auto;
@@ -848,7 +870,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .hide {
-    /* margin-top: -1000px; */
     font-size: 0rem;
   }
 
@@ -927,11 +948,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .classes {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
-    /* flex-basis: 100px; */
     justify-content: space-between;
-    /* align-items: center; */
   }
 
   .class1 {
@@ -945,6 +963,20 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .advantage {
     font-size: 1em;
+  }
+
+  .slides {
+    height: 400px;
+  }
+
+  .lifestyle-title {
+    font-size: 1.2em;
+  }
+
+  .benefit-img {
+    background: url(static/images/benefit1.png);
+    width: 100%;
+    clip-path: none;
   }
 
   .facilities {
@@ -1012,6 +1044,15 @@ input[type="number"]::-webkit-inner-spin-button {
     height: auto;
   }
 }
+
+/*s
+s
+s
+s
+s
+s
+s
+ 480px */
 
 @media screen and (max-width: 480px) {
   .header {
