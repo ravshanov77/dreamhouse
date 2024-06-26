@@ -926,16 +926,25 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .classes {
+    display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    flex-basis: 100px;
-    align-items: center;
+    /* flex-basis: 100px; */
+    justify-content: space-between;
+    /* align-items: center; */
   }
 
   .class1 {
     flex-basis: auto;
-    height: 200px;
-    margin-bottom: 20px;
+    flex: 0 0 48%;
+  }
+
+  .class1 h3 {
+    font-size: 1em;
+  }
+
+  .advantage {
+    font-size: 1em;
   }
 
   .facilities {
