@@ -802,15 +802,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* main style ends */
 
-/*
-s
-s
-s
-s
-s
-s
-s
-s 1200px */
+/* 1200px */
 
 @media screen and (max-width: 1200px) {
   .heading {
@@ -838,15 +830,7 @@ s 1200px */
   }
 }
 
-/*
-s
-s
-s
-s
-s
-s
-s
-s 768px */
+/* 768px */
 
 @media screen and (max-width: 850px) {
   .header {
