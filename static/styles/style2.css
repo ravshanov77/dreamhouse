@@ -832,13 +832,18 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .right-section {
     display: flex;
-    margin-top: -110px;
+    margin-top: -70px;
     justify-content: end;
     font-size: 0.7rem;
   }
 
   .hide1 {
     display: none;
+  }
+
+  .hide {
+    /* margin-top: -1000px; */
+    font-size: 0rem;
   }
 
   .background-img {
@@ -848,12 +853,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .overlay {
-    /* margin-top: -180px; */
-    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -180px;
+    font-size: 0.9rem;
   }
 
   .description {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .info-container {
