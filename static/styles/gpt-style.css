@@ -373,7 +373,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .class1 {
   flex-grow: 10;
-  flex-basis: 300px;
+  flex-wrap: wrap;
+  flex-basis: 230px;
 }
 
 .advantage {
@@ -847,11 +848,15 @@ s
 s
 s 768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .header {
     height: auto;
     display: flex;
     align-items: center;
+  }
+
+  #map {
+    height: 450px;
   }
 
   .main-content {
