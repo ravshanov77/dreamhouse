@@ -449,6 +449,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .lifestyle-benefit-rev {
   margin-bottom: 0px;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .lifestyle-description {
@@ -812,6 +813,10 @@ input[type="number"]::-webkit-inner-spin-button {
     height: auto;
   }
 
+  .hamburger {
+    display: flex;
+  }
+
   .middle-section {
     display: flex;
     flex-direction: row;
@@ -825,6 +830,20 @@ input[type="number"]::-webkit-inner-spin-button {
   .phone,
   .language-selector {
     justify-content: center;
+  }
+
+  .facilities {
+    display: grid;
+    /* margin: 70px; */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .facilities {
+    display: grid;
+    /* margin-left: 100px; */
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -956,6 +975,14 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 400px;
   }
 
+  .lifestyle-container {
+    font-size: 0.8em;
+  }
+
+  .lifestyle-container p {
+    font-size: 0.9rem;
+  }
+
   .lifestyle-title {
     font-size: 1.2em;
   }
@@ -974,7 +1001,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* align-self: flex-end; */
     /* flex-wrap: wrap-reverse; */
     max-width: 800px;
-    /* margin-bottom: -500px; */
+    margin: -50px 0 50px 0;
   }
 
   .lifestyle-benefit-rev .benefit-img {
@@ -991,14 +1018,33 @@ input[type="number"]::-webkit-inner-spin-button {
     clip-path: none;
   }
 
-  .facilities {
+  .location-heading {
+    font-size: 1.5em;
+  }
+
+  .lifestyle-benefit,
+  .lifestyle-benefit-rev {
     flex-direction: column;
     align-items: center;
+  }
+
+  .lifestyle-description,
+  .benefit-img {
+    margin: 0;
+  }
+
+  .facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    gap: 20px;
+    margin-top: 20px;
     height: auto;
   }
 
   .facility {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -1031,29 +1077,33 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
   }
 
+  .area-heading {
+    font-size: 1.2rem;
+  }
+
   .area-img {
     width: 100%;
+    height: auto;
+    margin-top: -20px;
   }
 
   .area-description {
     margin-left: 0;
   }
 
-  .lifestyle-benefit,
-  .lifestyle-benefit-rev {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .lifestyle-description,
-  .benefit-img {
-    margin: 0;
+  .area-description h3 {
+    font-size: 1.2rem;
+    margin-top: 40px;
   }
 
   .footer {
     flex-direction: column;
     align-items: center;
     height: auto;
+  }
+
+  .visual-container {
+    height: 420px;
   }
 }
 
