@@ -133,9 +133,98 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 5px;
 }
 
+/* 
 .hamburger {
   height: 20px;
   display: none;
+} */
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-container .menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-container .menu-icon img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.menu-container .menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 20%;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.menu-container:hover .menu-list {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-container .menu-list a {
+  opacity: 0;
+  transform: translateY(-10px);
+  color: black;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-container:hover .menu-list a {
+  animation: fadeIn 0.5s forwards;
+}
+
+.menu-container .menu-list a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.menu-container .menu-list a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.menu-container .menu-list a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.menu-container .menu-list a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.menu-container .menu-list a:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.menu-container .menu-list a:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.menu-container .menu-list a:hover {
+  background-color: #f1f1f1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .arrow {
@@ -990,10 +1079,8 @@ input[type="number"]::-webkit-inner-spin-button {
   .lifestyle-benefit-rev {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     height: 130%;
     text-align: left;
-    /* width: 100%; */
     flex-direction: column-reverse;
   }
 
