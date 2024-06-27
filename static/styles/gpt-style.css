@@ -1056,6 +1056,13 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .contact-img-container {
+    width: 95%;
+    height: auto;
+    margin-right: 32px;
+  }
+
+  .contact-img-container .overlay {
+    margin: 0;
     width: 100%;
   }
 
