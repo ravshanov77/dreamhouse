@@ -135,6 +135,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .hamburger {
   height: 20px;
+  display: none;
 }
 
 .arrow {
@@ -447,6 +448,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .lifestyle-benefit-rev {
   margin-bottom: 0px;
+  display: flex;
 }
 
 .lifestyle-description {
@@ -814,10 +816,6 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
   }
-  /* 
-  .middle-section a {
-    margin: 5px 0;
-  } */
 
   .left-section,
   .right-section {
@@ -830,7 +828,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-/* 768px */
+/* 850px */
 
 @media screen and (max-width: 850px) {
   .header {
@@ -960,6 +958,31 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .lifestyle-title {
     font-size: 1.2em;
+  }
+
+  .lifestyle-benefit-rev {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 130%;
+    text-align: left;
+    /* width: 100%; */
+    flex-direction: column-reverse;
+  }
+
+  .lifestyle-benefit-rev .lifestyle-description {
+    /* align-self: flex-end; */
+    /* flex-wrap: wrap-reverse; */
+    max-width: 800px;
+    /* margin-bottom: -500px; */
+  }
+
+  .lifestyle-benefit-rev .benefit-img {
+    /* align-self: center; */
+    margin-right: 50px;
+    height: auto;
+    /* margin-top: -50px; */
+    max-width: 105%;
   }
 
   .benefit-img {
