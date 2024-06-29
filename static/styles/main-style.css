@@ -22,6 +22,10 @@ section {
   scroll-margin-top: 90px;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   z-index: 10;
   position: fixed;
@@ -668,7 +672,6 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   padding: 0 20px;
   max-width: 98%;
-  /* width: 98%; */
   height: 430px;
   margin-top: -120px;
 }
@@ -1200,6 +1203,27 @@ input[type="number"]::-webkit-inner-spin-button {
   .area-description h3 {
     font-size: 1.2rem;
     margin-top: 40px;
+  }
+
+  .form-popup {
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .popup-img {
+    margin-top: 20px;
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .put-contact {
+    margin-top: -20px;
   }
 
   .footer {
