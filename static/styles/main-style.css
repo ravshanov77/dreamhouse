@@ -668,7 +668,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   padding: 0 20px;
   max-width: 98%;
-  width: 98%;
+  /* width: 98%; */
   height: 430px;
   margin-top: -120px;
 }
@@ -728,12 +728,12 @@ input[type="number"]::-webkit-inner-spin-button {
   border-width: 1px;
   background-color: rgba(255, 255, 255, 1);
   font-size: 20px;
-  padding-left: 25px;
+  padding-left: 15px;
   padding-right: -200px;
 }
 
 .put-contact-send {
-  width: 100%;
+  width: auto;
   margin-top: 24px;
   height: 48px;
   font-size: 18px;
@@ -793,7 +793,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   position: relative;
-  width: 50%; /* Adjust as necessary */
+  width: 100%; /* Adjust as necessary */
 }
 
 #selectedCountry {
