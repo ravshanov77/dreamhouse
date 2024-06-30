@@ -898,9 +898,76 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* main style ends */
 
-/* 1200px */
+/* 1440px */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .main-content {
+    padding: 50px;
+  }
+
+  .overlay {
+    font-size: 1.4rem;
+    margin-top: -100px;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+
+  .choose-button {
+    font-size: 1rem;
+  }
+
+  .lifestyle-benefit-rev img {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .benefit-img {
+    height: 570px;
+    width: 700px;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  .area-img {
+    height: 500px;
+    width: 50%;
+  }
+
+  .description-fact,
+  .description-info {
+    font-size: 0.9rem;
+  }
+
+  .area-description {
+    font-size: 0.9rem;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+    font-size: 0.8rem;
+  }
+
+  .contact-img {
+    width: 600px;
+  }
+
+  .contact-img-container .overlay {
+    width: 600px;
+    margin-top: 0;
+  }
+}
+
+/* 1150px */
+
+@media screen and (max-width: 1150px) {
   .heading {
     flex-direction: row;
     height: auto;
@@ -968,7 +1035,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .overlay {
-    /* margin-bottom: 300px; */
+    margin-bottom: 300px;
     margin-top: -100px;
   }
 
