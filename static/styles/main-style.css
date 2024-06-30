@@ -276,7 +276,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
   filter: brightness(70%);
   margin-top: 4.5%;
-  height: 100%;
+  height: 90%;
   clip-path: inset(0 0 13% 0);
 }
 
@@ -902,12 +902,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media screen and (max-width: 1200px) {
   .heading {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
   }
 
+  .overlay {
+    font-size: 1rem;
+    margin-top: -100px;
+  }
+
   .hamburger {
-    display: flex;
+    display: none;
   }
 
   .middle-section {
@@ -932,11 +937,24 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
   .facilities {
     display: grid;
     /* margin-left: 100px; */
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-section {
+    display: flex;
+    margin-top: -60px;
+    justify-content: end;
+    font-size: 0.7rem;
   }
 }
 
@@ -959,9 +977,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .right-section {
     display: flex;
-    margin-top: -60px;
+    margin-top: 5px;
     justify-content: end;
     font-size: 0.7rem;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .menu-container .menu-icon {
@@ -1206,7 +1228,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .form-popup {
-    display: flex;
+    display: none;
     height: 100%;
     flex-direction: row-reverse;
   }
@@ -1242,6 +1264,15 @@ input[type="number"]::-webkit-inner-spin-button {
 @media screen and (max-width: 500px) {
   .header {
     padding: 0 5px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .right-section {
+    width: 1000px;
+    margin-top: 10px;
   }
 
   .choose-button {
