@@ -958,6 +958,24 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+@media (min-width: 851px) and (max-width: 1049px) {
+  .middle-section {
+    width: 60%;
+  }
+
+  .right-section {
+    margin-top: 5px;
+  }
+
+  .overlay {
+    /* margin-bottom: 300px; */
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
 /* 850px */
 
 @media screen and (max-width: 850px) {
@@ -1181,6 +1199,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .contact-img {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .put-contact {
