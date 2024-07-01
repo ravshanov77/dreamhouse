@@ -1449,4 +1449,25 @@ input[type="number"]::-webkit-inner-spin-button {
   .footer {
     font-size: 0.8rem;
   }
+
+  .form-popup {
+    display: none;
+    height: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .popup-img {
+    margin-top: 20px;
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .put-contact {
+    margin-top: -20px;
+  }
 }
