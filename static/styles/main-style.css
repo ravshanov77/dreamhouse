@@ -1446,6 +1446,14 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1.2rem;
   }
 
+  .contact-img {
+    margin-left: 10px;
+  }
+
+  .contact-img-container .overlay {
+    margin-left: 10px;
+  }
+
   .footer {
     font-size: 0.9rem;
   }
