@@ -1380,6 +1380,14 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
   }
 
+  .hide1 {
+    display: none;
+  }
+
+  .hide {
+    font-size: 0rem;
+  }
+
   .right-section {
     width: 100%;
   }
@@ -1390,7 +1398,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .overlay {
-    margin-top: -50px;
+    margin-top: -200px;
   }
 
   .info-heading {
