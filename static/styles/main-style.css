@@ -82,6 +82,10 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
 }
 
+.phone {
+  min-width: 150px;
+}
+
 .heading {
   display: flex;
   justify-content: space-between;
@@ -136,12 +140,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .language-code {
   margin-right: 5px;
 }
-
-/* 
-.hamburger {
-  height: 20px;
-  display: none;
-} */
 
 .menu-container {
   position: relative;
@@ -1026,8 +1024,16 @@ input[type="number"]::-webkit-inner-spin-button {
 @media screen and (max-width: 1050px) {
   .facilities {
     display: grid;
-    /* margin-left: 100px; */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* margin-left: 50px; */
+  }
+
+  .facility {
+    width: 84%;
+  }
+
+  .location {
+    margin-top: 100px;
   }
 
   .header {
@@ -1036,15 +1042,39 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
   }
 
+  .middle-section {
+    width: 70%;
+  }
+
   .right-section {
     display: flex;
-    margin-top: -60px;
+    margin-top: 0px;
     justify-content: end;
     font-size: 0.7rem;
   }
+
+  .contact-img {
+    width: 510px;
+  }
+
+  .contact-img-container .overlay {
+    width: 510px;
+  }
+
+  .popup-img {
+    width: 500px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .form-container .put-contact {
+    width: 40%;
+  }
 }
 
-@media (min-width: 851px) and (max-width: 1049px) {
+@media (min-width: 851px) and (max-width: 1000px) {
   .middle-section {
     width: 60%;
   }
@@ -1055,11 +1085,120 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .overlay {
     margin-bottom: 300px;
-    margin-top: -100px;
+    margin-top: -450px;
+  }
+
+  .facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 50px;
   }
 
   .description {
+    font-size: 18px;
+  }
+
+  .choose-button {
+    font-size: 20px;
+  }
+
+  .second-choose-button {
+    width: 30%;
+  }
+
+  .classes {
+    display: flex;
     font-size: 1rem;
+    justify-content: space-between;
+  }
+
+  .advantage h3 {
+    font-size: 1.3rem;
+    width: 80%;
+    gap: auto;
+  }
+
+  .lifestyle-container {
+    font-size: 0.8em;
+  }
+
+  .lifestyle-container p {
+    font-size: 0.9rem;
+  }
+
+  .lifestyle-title {
+    font-size: 1.2em;
+  }
+
+  .lifestyle-benefit-rev {
+    display: flex;
+    align-items: center;
+    height: 130%;
+    text-align: left;
+    flex-direction: column-reverse;
+  }
+
+  .lifestyle-benefit-rev .lifestyle-description {
+    max-width: 800px;
+    margin: -50px 0 50px 0;
+  }
+
+  .lifestyle-benefit-rev .benefit-img {
+    margin-right: 50px;
+    height: auto;
+    max-width: 105%;
+  }
+
+  .benefit-img {
+    background: url(static/images/benefit1.png);
+    width: 100%;
+    clip-path: none;
+  }
+
+  .location-heading {
+    font-size: 1.5em;
+  }
+
+  .lifestyle-benefit,
+  .lifestyle-benefit-rev {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lifestyle-description,
+  .benefit-img {
+    margin: 0;
+  }
+
+  .form-popup {
+    display: none;
+    height: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .form-container {
+    display: flex;
+    width: 50rem;
+    flex-direction: column-reverse;
+  }
+
+  .popup-img {
+    margin-top: 20px;
+    width: 50rem;
+    height: 30rem;
+  }
+
+  .contact-img {
+    width: 440px;
+  }
+
+  .contact-img-container .overlay {
+    width: 440px;
+  }
+
+  .put-contact {
+    margin-top: -20px;
+    width: 46%;
   }
 }
 
@@ -1113,7 +1252,7 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -180px;
+    margin-top: -200px;
     font-size: 0.9rem;
   }
 
@@ -1159,7 +1298,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .choose-button {
-    width: 100%;
+    width: 70%;
   }
 
   .main-content {
@@ -1373,7 +1512,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .hamburger {
-    display: flex;
+    display: grid;
   }
 
   .middle-section {
@@ -1398,7 +1537,8 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .overlay {
-    margin-top: -200px;
+    font-size: 0.8rem;
+    margin-top: -150px;
   }
 
   .info-heading {

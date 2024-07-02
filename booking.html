@@ -19,9 +19,12 @@
     <header>
       <div class="heading">
         <div class="left-section">
-          <a href="http://127.0.0.1:5500/index.html">
-            <img class="logo" src="static/images/full-logo.svg" />
-          </a>
+          <img
+            onclick="location.href='index.html'"
+            class="logo"
+            src="static/images/full-logo.svg"
+            alt="Logo Image"
+          />
         </div>
 
         <div class="middle-section">
@@ -31,38 +34,33 @@
           >
             <p>Loyiha haqida</p>
           </a>
-
           <a
             href="http://127.0.0.1:5500/index.html#advantages"
             class="categories hide1"
           >
             <p>Avzalliklar</p>
           </a>
-
           <a
             href="http://127.0.0.1:5500/index.html#uniqueness"
             class="categories hide1"
           >
             <p>O'ziga xoslik</p>
           </a>
-
           <a
             href="http://127.0.0.1:5500/index.html#gallery"
             class="categories hide1"
           >
             <p>Galereya</p>
           </a>
-
           <a
             href="http://127.0.0.1:5500/index.html#address"
             class="categories hide1"
           >
             <p>Manzil</p>
           </a>
-
           <a
             href="http://127.0.0.1:5500/index.html#area"
-            class="categories hide1"
+            class="categories hide"
           >
             <p>Hudud</p>
           </a>
@@ -70,20 +68,28 @@
 
         <div class="right-section">
           <div class="phone">
-            <img class="phone-img" src="static/images/phone.svg" />
+            <img
+              class="phone-img"
+              src="static/images/phone.svg"
+              alt="phone-logo"
+            />
             <p>+998 90 470 69 70</p>
           </div>
 
           <div class="language-selector">
             <div class="current-language">
-              <img class="flag-img" src="static/images/Uzbekistan.png" />
+              <img
+                class="flag-img"
+                src="static/images/Uzbekistan.png"
+                alt="flag-image"
+              />
               <span class="language-code">UZ</span>
               <span class="arrow">&#9654;</span>
             </div>
 
             <div class="language-dropdown">
               <div
-                onclick="location.href='ru/booking.html'"
+                onclick="location.href='ru/index.html'"
                 class="language-option"
               >
                 <img
@@ -93,6 +99,20 @@
                 />
                 <span class="language-code">RU</span>
               </div>
+            </div>
+          </div>
+
+          <div class="menu-container">
+            <div class="menu-icon">
+              <img class="hamburger" src="static/images/hamburger.svg" />
+            </div>
+            <div class="menu-list">
+              <a href="#about">Loyiha haqida</a>
+              <a href="#advantages">Afzalliklar</a>
+              <a href="#uniqeuness">O'ziga xoslik</a>
+              <a href="#gallery">Galereya</a>
+              <a href="#address">Manzil</a>
+              <a href="#area">Hudud</a>
             </div>
           </div>
         </div>
