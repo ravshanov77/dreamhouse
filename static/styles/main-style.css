@@ -910,6 +910,11 @@ input[type="number"]::-webkit-inner-spin-button {
   .overlay {
     font-size: 1.4rem;
     margin-top: -100px;
+    margin-bottom: 100px;
+  }
+
+  .location {
+    margin-top: 100px;
   }
 
   .description {
@@ -962,7 +967,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .put-contact {
-    width: 45%;
+    width: 48%;
   }
 
   .put-contact-heading {
@@ -979,6 +984,21 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .put-contact-send {
     width: 100%;
+  }
+
+  .form-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-img {
+    width: 100%;
+  }
+
+  .form-container .put-contact {
+    width: 100%;
+    margin: 10px -300px 10px 20px;
   }
 }
 
@@ -1074,7 +1094,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-@media (min-width: 851px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .middle-section {
     width: 60%;
   }
@@ -1091,7 +1111,6 @@ input[type="number"]::-webkit-inner-spin-button {
   .facilities {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 50px;
   }
 
   .description {
