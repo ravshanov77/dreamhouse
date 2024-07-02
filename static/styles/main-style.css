@@ -1600,6 +1600,10 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 0.9rem;
   }
 
+  .location {
+    margin-top: 0px;
+  }
+
   .location-heading,
   .area-heading {
     font-size: 1.2rem;
@@ -1625,13 +1629,19 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .form-container {
     display: flex;
+    width: 80%;
     flex-direction: column-reverse;
+  }
+
+  .form-container .put-contact {
+    width: 100%;
+    margin-left: 0px;
   }
 
   .popup-img {
     margin-top: 20px;
-    width: 20rem;
-    height: 10rem;
+    width: 21rem;
+    height: 18rem;
   }
 
   .put-contact {
